@@ -133,10 +133,13 @@ function fnMovePage(id, nextID) {
             
             if(sum_final_score <= 85) {
 				$("#section_final").css({"background-image" : "url('./img/final_85.png')"});
+                $(".result_text").text('구름 가득한 하늘 사이에 태양이 살짝 보이네요! 하마터면 일출을 못보고 새해를 맞이할 뻔 했네요..!');
 			} else if(sum_final_score <= 105) {
 				$("#section_final").css({"background-image" : "url('./img/final_105.png')"});
+                $(".result_text").text('약간 구름이 보이지만 밝은 태양이 올해의 시작을 알려주고 있어요!');
             } else if(sum_final_score <= 135) {
 				$("#section_final").css({"background-image" : "url('./img/final_135.png')"});
+                $(".result_text").text('구름 한 점 없이 맑은 하늘로 시작하는 한해 올해는 좋은 일이 가득할 것 같아요!');
             }
             
             //console.log("final_cnt_1 :: ", final_cnt_1);

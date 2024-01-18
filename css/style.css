@@ -24,9 +24,17 @@ body {
 
 #section_0_1 {
   background-image: url("../img/pado_poster.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: round;
   object-fit: contain;
+  /*
+  background-image: url("../img/pado_poster.png");
+  background-repeat: no-repeat;
+  position: center;
+  margin:auto;
+  width: 100%;
+  height: 100%;
+  */
 }
 
 #section_0_2 {
@@ -85,7 +93,7 @@ body {
 }
 
 #section_9 {
-  background-image: url("../img/step_10.png");
+  background-image: url("../img/step_09.png");
   background-size: cover;
   background-repeat: round;
 }

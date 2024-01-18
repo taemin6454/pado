@@ -7,6 +7,22 @@
   font-style: normal;
 }
 
+/* 소요단풍체 (본문)*/ 
+@font-face {
+	font-family: 'SOYOMapleBoldTTF';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* #태백체(숫자 / 점수) */ 
+@font-face {
+    font-family: 'TAEBAEKfont';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/TAEBAEKfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
   font-family: montserrat, arial, verdana;
   margin: 0;
@@ -436,6 +452,7 @@ body {
   font-size: 22px;
   color: #333;
   text-align: left;
+  font-family: 'SOYOMapleBoldTTF';
 }
 
 @keyframes fadeIn {

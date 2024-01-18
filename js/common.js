@@ -77,7 +77,7 @@ $(function () {
 
 function fnMovePage(id, nextID) {
     if (nextID == "final") {
-        console.log(cntList);
+        //console.log(cntList);
         if (cntList.length == 27) {
             var final_cnt_1 = 0;
             var final_cnt_2 = 0;
@@ -89,7 +89,7 @@ function fnMovePage(id, nextID) {
                         element.get("step_" + element1) != undefined && 
                         element.get("step_" + element1) != null
                     ) {
-                        console.log(element.get("step_" + element1));
+                        //console.log(element.get("step_" + element1));
                         final_cnt_1 += element.get("step_" + element1);
                     }
                 });
@@ -99,7 +99,7 @@ function fnMovePage(id, nextID) {
                         element.get("step_" + element2) != undefined &&
                         element.get("step_" + element2) != null
                     ) {
-                        console.log(element.get("step_" + element2));
+                        //console.log(element.get("step_" + element2));
                         final_cnt_2 += element.get("step_" + element2);
                     }
                 });
@@ -109,7 +109,7 @@ function fnMovePage(id, nextID) {
                         element.get("step_" + element3) != undefined &&
                         element.get("step_" + element3) != null
                     ) {
-                        console.log(element.get("step_" + element3));
+                        //console.log(element.get("step_" + element3));
                         final_cnt_3 += element.get("step_" + element3);
                     }
                 });
@@ -145,7 +145,7 @@ function fnMovePage(id, nextID) {
             //alert("final testsetset");
         } else {
             //console.log(cntList.length);
-            //alert("final testsetset");
+            alert("모든 항목을 선택하신 이후에 진행하여주세요!!");
         }
     } else {
         $(id).addClass("none");

@@ -130,9 +130,18 @@ function fnMovePage(id, nextID) {
             $("#fin_2").text(final_cnt_2);
             $("#fin_3").text(final_cnt_3);
             $("#fin_top").text(sum_final_score);
-            console.log("final_cnt_1 :: ", final_cnt_1);
-            console.log("final_cnt_2 :: ", final_cnt_2);
-            console.log("final_cnt_3 :: ", final_cnt_3);
+            
+            if(sum_final_score <= 85) {
+				$("#section_final").css({"background-image" : "url('./img/final_85.png')"});
+			} else if(sum_final_score <= 105) {
+				$("#section_final").css({"background-image" : "url('./img/final_105.png')"});
+            } else if(sum_final_score <= 135) {
+				$("#section_final").css({"background-image" : "url('./img/final_135.png')"});
+            }
+            
+            //console.log("final_cnt_1 :: ", final_cnt_1);
+            //console.log("final_cnt_2 :: ", final_cnt_2);
+            //console.log("final_cnt_3 :: ", final_cnt_3);
             //alert("final testsetset");
         } else {
             //console.log(cntList.length);

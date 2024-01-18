@@ -26,6 +26,7 @@ body {
   background-image: url("../img/pado_poster.png");
   background-size: cover;
   background-repeat: round;
+  object-fit: contain;
 }
 
 #section_0_2 {
@@ -161,7 +162,7 @@ body {
 }
 
 #step_2{
-  top: 62%;
+  top: 60%;
 }
 
 #step_3 {
@@ -169,7 +170,7 @@ body {
 }
 
 #step_4 {
-  top: 42%;
+  top: 43%;
 }
 
 #step_5{
@@ -177,11 +178,11 @@ body {
 }
 
 #step_6 {
-  top: 82%;
+  top: 83%;
 }
 
 #step_7 {
-  top: 44%;
+  top: 42%;
 }
 
 #step_8{
@@ -193,7 +194,7 @@ body {
 }
 
 #step_10 {
-  top: 42%;
+  top: 43%;
 }
 
 #step_11{
@@ -205,11 +206,11 @@ body {
 }
 
 #step_13 {
-  top: 44%;
+  top: 45%;
 }
 
 #step_14{
-  top: 63%;
+  top: 62%;
 }
 
 #step_15 {
@@ -217,7 +218,7 @@ body {
 }
 
 #step_16 {
-  top: 42%;
+  top: 45%;
 }
 
 #step_17{
@@ -229,7 +230,7 @@ body {
 }
 
 #step_19 {
-  top: 43.5%;
+  top: 46%;
 }
 
 #step_20{
@@ -241,11 +242,11 @@ body {
 }
 
 #step_22 {
-  top: 44%;
+  top: 45%;
 }
 
 #step_23{
-  top: 62%;
+  top: 64%;
 }
 
 #step_24 {
@@ -253,7 +254,7 @@ body {
 }
 
 #step_25 {
-  top: 42%;
+  top: 46%;
 }
 
 #step_26{
@@ -301,11 +302,19 @@ body {
 }
 
 #prev {
-  left : 10px
+  left : 10px;
+}
+
+#prev:hover{
+  background-color:rgba(0,0,0,0.4)
 }
 
 #next {
-  right : 10px
+  right : 10px;
+}
+
+#next:hover{
+  background-color:rgba(0,0,0,0.4)
 }
 
 /*form styles*/
@@ -343,9 +352,10 @@ body {
 .msform .action-button {
   width: 50px;
   height: 120px;
-  background: #88b3da;
+  background: #fff;
+  opacity: 0.6;
   font-weight: bold;
-  color: white;
+  color: rgb(0, 6, 36);
   border: 0 none;
   border-radius: 1px;
   cursor: pointer;
@@ -363,14 +373,22 @@ body {
   /*CSS counters to number the steps*/
   counter-reset: step;
   width: 65%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  margin-top: 5px;
   position: absolute;
-  left: 14%;
+  left: 15%;
+  background-color: rgb(255,255,255,0.5);
+  border-radius: 5px;
 }
+
+
 .progressbar li {
   list-style-type: none;
-  color: #000;
+  color: #333;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 17px;
   width: 25%;
   border-radius: 8px;
   float: left;
@@ -387,6 +405,7 @@ body {
   background: #c9deef;
   border-radius: 50px;
   margin: 0 auto 5px auto;
+  
 }
 /*progressbar connectors*/
 .progressbar li:after {
@@ -411,7 +430,9 @@ body {
 }
 
 .progressbar h3 {
-  color: aliceblue;
+  font-size: 22px;
+  color: #333;
+  text-align: left;
 }
 
 @keyframes fadeIn {

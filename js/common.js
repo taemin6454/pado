@@ -25,7 +25,6 @@ $(document).ready(function () {
 
 
 $(function () {
-
     
     var input = document.getElementById("vd_text");
 

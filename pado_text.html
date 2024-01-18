@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- jQuery -->
+  <script src="./js/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <script src="./js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="./js/common.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video id="section_01_vd" class="panels" loop autoplay muted>
+        <source src="./video/pexels_videos_2439510 (1080p).mp4" type="video/mp4" />
+    </video>
+    <audio src="./video/wave_soundes.mp3" autoplay loop></audio>
+    <div class="msform">
+        <ul id="step_3" class="progressbar" style="display: flex;">
+            <input id="vd_text" type="text" placeholder="내가 가지고 있는 걱정은 무엇인가요? 클릭 후 작성해보세요." value="">
+            <button type="button" id="vd_btn" data-toggle="modal" data-target="#exampleModal"></button>
+        </ul>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div id="vd_modal" class="modal-content">
+            <div class="modal-header">
+                
+            <div id="pado_modal" class="modal-body">
+                
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

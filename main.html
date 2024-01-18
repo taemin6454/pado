@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <!-- jQuery -->
+  <script src="./js/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="./js/common.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body> 
+  <a href="#" id="section_0_1" class="panels" onclick="fnMovePage('#section_0_1', '#section_0_2')">
+    
+  </a>
+  <div href="#" id="section_0_2" class="panels none">
+    <div class="msform">
+      <fieldset>
+        <input type="button" onclick="fnMovePage('#section_0_2', '#section_0_1')" name="next" id="prev" class="next action-button" value="<" style="float: left;"/>
+        <input type="button" onclick="fnMovePage('#section_0_2', '#section_1')" name="next" id="next" class="next action-button" value=">" style="float: right;"/>
+      </fieldset>
+    </div>
+  </div>
+  <div id="section_1" class="panels none">
+    <div class="msform">
+      <!-- progressbar -->
+      <ul id="step_1" class="progressbar">
+          <h3 class="question">나는 어려운 일이 닥쳤을 때 감정을 통제할 수 있다.</h3>
+          <a href="#" onclick="fnMoveNextContent('step_1', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_1', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_1', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_1', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+      </ul>
+      <ul id="step_2" class="progressbar">
+        <h3 class="question">내가 무슨 생각을 하면, 그 생각이 내 기분에 어떤 영향을 미칠지 잘 알아챈다.</h3>
+        <a href="#" onclick="fnMoveNextContent('step_2', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_2', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_2', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_2', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <ul id="step_3" class="progressbar">
+      <h3>논쟁거리가 되는 문제를 가족이나 친구들과 토론할 때 내 감정을 잘 통제 할 수 있다.</h3>
+      <a href="#" onclick="fnMoveNextContent('step_3', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_3', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_3', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_3', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <fieldset>
+      <input type="button" onclick="fnMovePage('#section_1', '#section_0_2')" name="next" id="prev" class="next action-button" value="<" style="float: left;"/>
+      <input type="button" onclick="fnMovePage('#section_1', '#section_2')" name="next" id="next" class="next action-button" value=">" style="float: right;"/>
+    </fieldset>
+  </div>
+</div>
+
+<div id="section_2" class="panels none">
+  <div class="msform">
+      <!-- progressbar -->
+      <ul id="step_4" class="progressbar">
+          <h3>당장해야할 일이 있으면 나는 어떠한 유혹이나 방해도 잘 이겨내고 할 일을 한다.</h3>
+          <a href="#" onclick="fnMoveNextContent('step_4', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_4', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_4', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_4', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+      </ul>
+      <ul id="step_5" class="progressbar">
+        <h3>아무리 당황스럽고 어려운 상황이 닥쳐도, 나는 내가 어떤 생각을 하고 있는지 스스로 잘 안다.</h3>
+        <a href="#" onclick="fnMoveNextContent('step_5', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_5', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_5', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_5', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <ul id="step_6" class="progressbar">
+      <h3>누군가가 나에게 화를 낼 경우 나는 우선 그 사람의 의견을 잘 듣는다.</h3>
+      <a href="#" onclick="fnMoveNextContent('step_6', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_6', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_6', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_6', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <fieldset>
+      <input type="button" onclick="fnMovePage('#section_2', '#section_1')" name="next" id="prev" class="next action-button" value="<" style="float: left;"/>
+      <input type="button" onclick="fnMovePage('#section_2', '#section_3')" name="next" id="next" class="next action-button" value=">" style="float: right;"/>
+    </fieldset>
+  </div>
+</div>
+
+<div id="section_3" class="panels none">
+  <div class="msform">
+    <!-- progressbar -->
+    <ul id="step_7" class="progressbar">
+      <h3>문제가 생기면 여러 가지 가능한 해결 방안에 대해 먼저 생각한 후에 해결하려고 노력한다.</h3>
+      <a href="#" onclick="fnMoveNextContent('step_7', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_7', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_7', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_7', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <ul id="step_8" class="progressbar">
+      <h3>어려운 일이 생기면 그 원인이 무엇인지 신중하게 생각한 후에 그 문제를 해결하려고 노력한다.</h3>
+      <a href="#" onclick="fnMoveNextContent('step_8', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_8', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_8', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_8', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <ul id="step_9" class="progressbar">
+      <h3>나는 대부분의 상황에서 문제의 원인을 잘 알고 있다고 믿는다.</h3>
+      <a href="#" onclick="fnMoveNextContent('step_9', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_9', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_9', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_9', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <fieldset>
+      <input type="button" onclick="fnMovePage('#section_3', '#section_2')" name="next" id="prev" class="next action-button" value="<" style="float: left;"/>
+      <input type="button" onclick="fnMovePage('#section_3', '#section_4')" name="next" id="next" class="next action-button" value=">" style="float: right;"/>
+    </fieldset>
+  </div>
+</div>
+
+  <div id="section_4" class="panels none">
+    <div class="msform">
+      <!-- progressbar -->
+      <ul id="step_10" class="progressbar">
+        <h3>나는 분위기나 대화 상대에 따라 대화를 잘 이끌어 갈 수 있다.</h3>
+        <a href="#" onclick="fnMoveNextContent('step_10', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_10', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_10', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_10', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+      </ul>
+      <ul id="step_11" class="progressbar">
+        <h3>나는 재치있는 농담을 잘한다.</h3>
+        <a href="#" onclick="fnMoveNextContent('step_11', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_11', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_11', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_11', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <ul id="step_12" class="progressbar">
+      <h3>나는 내가 표현하고자 하는 바에 대한 적절한 문구나 단어를 잘 찾아낸다.</h3>
+      <a href="#" onclick="fnMoveNextContent('step_12', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_12', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_12', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_12', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <fieldset>
+      <input type="button" onclick="fnMovePage('#section_4', '#section_3')" name="next" id="prev" class="next action-button" value="<" style="float: left;"/>
+      <input type="button" onclick="fnMovePage('#section_4', '#section_5')" name="next" id="next" class="next action-button" value=">" style="float: right;"/>
+    </fieldset>
+  </div>
+  </div>
+  
+  <div id="section_5" class="panels none">
+    <div class="msform">
+      <!-- progressbar -->
+      <ul id="step_13" class="progressbar">
+        <h3>사람들의 얼굴 표정을 보면 어떤 감정인지 알 수 있다.</h3>
+        <a href="#" onclick="fnMoveNextContent('step_13', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_13', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_13', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_13', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+      </ul>
+      <ul id="step_14" class="progressbar">
+        <h3>슬퍼하거나 화를 내거나 당황하는 사람을 보면 그들이 어떤 생각을 하는지 잘 알 수 있다.</h3>
+        <a href="#" onclick="fnMoveNextContent('step_14', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_14', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_14', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_14', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <ul id="step_15" class="progressbar">
+      <h3>동료가 화를 낼 경우 나는 그 이유를 꽤 잘 아는 편이다.</h3>
+      <a href="#" onclick="fnMoveNextContent('step_15', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_15', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_15', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_15', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <fieldset>
+      <input type="button" onclick="fnMovePage('#section_5', '#section_4')" name="next" id="prev" class="next action-button" value="<" style="float: left;"/>
+      <input type="button" onclick="fnMovePage('#section_5', '#section_6')" name="next" id="next" class="next action-button" value=">" style="float: right;"/>
+    </fieldset>
+  </div>
+  </div>
+
+  <div id="section_6" class="panels none">
+    <div class="msform">
+      <!-- progressbar -->
+      <ul id="step_16" class="progressbar">
+        <h3>나는 내 주변 사람들로 부터 사랑과 관심을 받고 있다.</h3>
+        <a href="#" onclick="fnMoveNextContent('step_16', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_16', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_16', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_16', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+      </ul>
+      <ul id="step_17" class="progressbar">
+        <h3>나는 내 친구들을 정말로 좋아한다.</h3>
+        <a href="#" onclick="fnMoveNextContent('step_17', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_17', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_17', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_17', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <ul id="step_18" class="progressbar">
+      <h3>내 주변 사람들은 내 기분을 잘 이해한다.</h3>
+      <a href="#" onclick="fnMoveNextContent('step_18', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_18', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_18', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_18', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <fieldset>
+      <input type="button" onclick="fnMovePage('#section_6', '#section_5')" name="next" id="prev" class="next action-button" value="<" style="float: left;"/>
+      <input type="button" onclick="fnMovePage('#section_6', '#section_7')" name="next" id="next" class="next action-button" value=">" style="float: right;"/>
+    </fieldset>
+  </div>
+  </div>
+
+  <div id="section_7" class="panels none">
+    <div class="msform">
+      <!-- progressbar -->
+      <ul id="step_19" class="progressbar">
+        <h3>열심히 일하면 언지나 보답이 있으리라고 생각한다.</h3>
+        <a href="#" onclick="fnMoveNextContent('step_19', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_19', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_19', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_19', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+      </ul>
+      <ul id="step_20" class="progressbar">
+        <h3>맞든 아니든 "아무리 어려운 문제라도 나는 해결할 수 있다"고 믿는 것이 좋다고 생각한다. </h3>
+        <a href="#" onclick="fnMoveNextContent('step_20', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_20', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_20', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_20', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <ul id="step_21" class="progressbar">
+      <h3>어려운 상황이 닥쳐도 나는 모든 일이 다 잘 해결될거라고 확신한다.</h3>
+      <a href="#" onclick="fnMoveNextContent('step_21', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_21', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_21', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_21', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <fieldset>
+      <input type="button" onclick="fnMovePage('#section_7', '#section_6')" name="next" id="prev" class="next action-button" value="<" style="float: left;"/>
+      <input type="button" onclick="fnMovePage('#section_7', '#section_8')" name="next" id="next" class="next action-button" value=">" style="float: right;"/>
+    </fieldset>
+  </div>
+  </div>
+
+  <div id="section_8" class="panels none">
+    <div class="msform">
+      <!-- progressbar -->
+      <ul id="step_22" class="progressbar">
+        <h3>내 삶은 내가 생각하는 이상적인 삶에 가깝다.</h3>
+        <a href="#" onclick="fnMoveNextContent('step_22', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_22', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_22', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_22', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+      </ul>
+      <ul id="step_23" class="progressbar">
+        <h3>내 인생의 여러가지 조건들은 만족스럽다.</h3>
+        <a href="#" onclick="fnMoveNextContent('step_23', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_23', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_23', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_23', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <ul id="step_24" class="progressbar">
+      <h3>나는 내 삶에 만족한다.</h3>
+      <a href="#" onclick="fnMoveNextContent('step_24', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_24', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_24', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_24', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <fieldset>
+      <input type="button" onclick="fnMovePage('#section_8', '#section_7')" name="next" id="prev" class="next action-button" value="<" style="float: left;"/>
+      <input type="button" onclick="fnMovePage('#section_8', 'final')" name="next" id="next" class="next action-button" value=">" style="float: right;"/>
+    </fieldset>
+  </div>
+  </div>
+<!--
+  <div id="section_9" class="panels none">
+    <div class="msform">
+      
+      <ul id="step_25" class="progressbar">
+        <h3>나는 다양한 종류의 많은 사람들에게 고마움을 느낀다.</h3>
+        <a href="#" onclick="fnMoveNextContent('step_25', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_25', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_25', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_25', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+      </ul>
+      <ul id="step_26" class="progressbar">
+        <h3>내가 고맙게 여기는 것들을 모두 적는다면 아주 긴 목록이 될 것이다.</h3>
+        <a href="#" onclick="fnMoveNextContent('step_26', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_26', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_26', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_26', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <ul id="step_27" class="progressbar">
+      <h3>나이가 들어갈수록 내 삶의 일부가 된 사람, 사건, 생활에 대해 감사하는 마음이 더 커져간다.</h3>
+      <a href="#" onclick="fnMoveNextContent('step_27', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_27', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_27', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_27', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <fieldset>
+      <input type="button" onclick="fnMovePage('#section_9', '#section_8')" name="next" id="prev" class="next action-button" value="<" style="float: left;"/>
+      <input type="button" onclick="fnMovePage('#section_9', '#section_10')" name="next" id="next" class="next action-button" value=">" style="float: right;"/>
+    </fieldset>
+  </div>
+  </div>
+  
+  <div id="section_10" class="panels none">
+    <div class="msform">
+      
+      <ul id="step_28" class="progressbar">
+          <a href="#" onclick="fnMoveNextContent('step_28', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_28', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_28', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_28', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+      </ul>
+      <ul id="step_29" class="progressbar">
+        <a href="#" onclick="fnMoveNextContent('step_29', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_29', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_29', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_29', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <ul id="step_30" class="progressbar">
+      <a href="#" onclick="fnMoveNextContent('step_30', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_30', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_30', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_30', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <fieldset>
+      <input type="button" onclick="fnMovePage('#section_10', '#section_9')" name="next" id="prev" class="next action-button" value="<" style="float: left;"/>
+      <input type="button" onclick="fnMovePage('#section_10', '#section_11')" name="next" id="next" class="next action-button" value=">" style="float: right;"/>
+    </fieldset>
+  </div>
+  </div>
+
+  <div id="section_11" class="panels none">
+    <div class="msform">
+      
+      <ul id="step_31" class="progressbar">
+          <a href="#" onclick="fnMoveNextContent('step_31', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_31', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_31', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_31', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+      </ul>
+      <ul id="step_32" class="progressbar">
+        <a href="#" onclick="fnMoveNextContent('step_32', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_32', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_32', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_32', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <ul id="step_33" class="progressbar">
+      <a href="#" onclick="fnMoveNextContent('step_33', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_33', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_33', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_33', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <fieldset>
+      <input type="button" onclick="fnMovePage('#section_11', '#section_10')" name="next" id="prev" class="next action-button" value="<" style="float: left;"/>
+      <input type="button" onclick="fnMovePage('#section_11', '#section_12')" name="next" id="next" class="next action-button" value=">" style="float: right;"/>
+    </fieldset>
+  </div>
+  </div>
+  <div id="section_12" class="panels none">
+    <div class="msform">
+       
+      <ul id="step_34" class="progressbar">
+          <a href="#" onclick="fnMoveNextContent('step_34', 'set_1', 1)"><li class="set_1">1~3개</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_34', 'set_2', 2)"><li class="set_2">4~6개</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_34', 'set_3', 3)"><li class="set_3">7~9개</li></a>
+          <a href="#" onclick="fnMoveNextContent('step_34', 'set_4', 4)"><li class="set_4">10개 이상</li></a>
+      </ul>
+      <ul id="step_35" class="progressbar">
+        <a href="#" onclick="fnMoveNextContent('step_35', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_35', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_35', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+        <a href="#" onclick="fnMoveNextContent('step_35', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <ul id="step_36" class="progressbar">
+      <a href="#" onclick="fnMoveNextContent('step_36', 'set_1', 1)"><li class="set_1">거의 그렇지 않다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_36', 'set_2', 2)"><li class="set_2">그렇지 않은 편이다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_36', 'set_3', 3)"><li class="set_3">그렇다</li></a>
+      <a href="#" onclick="fnMoveNextContent('step_36', 'set_4', 4)"><li class="set_4">매우 그렇다</li></a>
+    </ul>
+    <fieldset>
+      <input type="button" onclick="fnMovePage('#section_12', '#section_11')" name="next" id="prev" class="next action-button" value="<" style="float: left;"/>
+      <input type="button" onclick="fnMovePage('#section_12', 'final')" name="next" id="next" class="next action-button" value=">" style="float: right;"/>
+    </fieldset>
+  </div>
+  -->
+  </div>
+
+  <div id="section_final" class="panels none">
+    <div class="msform" style="height: 100%;">
+      <!-- progressbar -->
+      <div id="step_final_top">
+          <span id="fin_top"></span>
+      </div>
+      <div id="step_final_down">
+          <span id="fin_1"></span>
+          <span id="fin_2"></span>
+          <span id="fin_3"></span>
+      </div>
+    </div>
+  </div>
+</body>

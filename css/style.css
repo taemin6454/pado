@@ -1,0 +1,456 @@
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@font-face {
+  font-family: 'KBO-Dia-Gothic_bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: montserrat, arial, verdana;
+  margin: 0;
+}
+.panels {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  /* animation: fadeIn 5s; */
+}
+
+.none {
+  display: none;
+}
+
+#section_0_1 {
+  background-image: url("../img/pado_poster.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_0_2 {
+  background-image: url("../img/pado_intro.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_1 {
+  /* background-image: url("../img/step_02.png"); */
+  background-image: url("../img/step_01.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_2 {
+  background-image: url("../img/step_02.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_3 {
+  background-image: url("../img/step_03.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_4 {
+  background-image: url("../img/step_04.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_5 {
+  background-image: url("../img/step_05.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_6 {
+  background-image: url("../img/step_06.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_7 {
+  background-image: url("../img/step_07.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_8 {
+  background-image: url("../img/step_08.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_9 {
+  background-image: url("../img/step_10.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_10 {
+  background-image: url("../img/step_11.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_11 {
+  background-image: url("../img/step_12.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_12 {
+  background-image: url("../img/step_13.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_final {
+  background-size: cover;
+  background-repeat: round;
+}
+
+#section_final {
+  background-image: url("../img/final_result.PNG");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#step_final_top {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    text-align: center;
+    cursor: none;
+    margin-left: 10px;
+}
+
+#step_final_top span {
+  font-size: 10em;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+}
+
+#step_final_down {
+  width: 100%;
+  height: 100%;
+  margin-top: 110%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+#step_final_down span {
+  font-size: 4em;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+}
+
+#fin_1 {
+  margin-left: 19%;
+}
+
+#fin_3 {
+  margin-right: 20%;
+}
+
+#step_1 {
+  top: 42%;
+}
+
+#step_2{
+  top: 62%;
+}
+
+#step_3 {
+  top: 80%;
+}
+
+#step_4 {
+  top: 42%;
+}
+
+#step_5{
+  top: 63%;
+}
+
+#step_6 {
+  top: 82%;
+}
+
+#step_7 {
+  top: 44%;
+}
+
+#step_8{
+  top: 62%;
+}
+
+#step_9 {
+  top: 82%;
+}
+
+#step_10 {
+  top: 42%;
+}
+
+#step_11{
+  top: 62%;
+}
+
+#step_12 {
+  top: 81%;
+}
+
+#step_13 {
+  top: 44%;
+}
+
+#step_14{
+  top: 63%;
+}
+
+#step_15 {
+  top: 82%;
+}
+
+#step_16 {
+  top: 42%;
+}
+
+#step_17{
+  top: 63%;
+}
+
+#step_18 {
+  top: 80%;
+}
+
+#step_19 {
+  top: 43.5%;
+}
+
+#step_20{
+  top: 62%;
+}
+
+#step_21 {
+  top: 80%;
+}
+
+#step_22 {
+  top: 44%;
+}
+
+#step_23{
+  top: 62%;
+}
+
+#step_24 {
+  top: 82%;
+}
+
+#step_25 {
+  top: 42%;
+}
+
+#step_26{
+  top: 62%;
+}
+
+#step_27 {
+  top: 80%;
+}
+
+#step_28 {
+  top: 43%;
+}
+
+#step_29{
+  top: 62%;
+}
+
+#step_30 {
+  top: 82%;
+}
+
+#step_31 {
+  top: 42%;
+}
+
+#step_32{
+  top: 62%;
+}
+
+#step_33 {
+  top: 80%;
+}
+
+#step_34 {
+  top: 43%;
+}
+
+#step_35{
+  top: 62%;
+}
+
+#step_36 {
+  top: 80%;
+}
+
+#prev {
+  left : 10px
+}
+
+#next {
+  right : 10px
+}
+
+/*form styles*/
+.msform {
+  width: 100%;
+  text-align: center;
+}
+
+.msform fieldset {
+  border: 0 none;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0px;
+  
+  /*stacking fieldsets above each other*/
+  text-align: center;
+}
+/*Hide all except first fieldset*/
+.msform fieldset:not(:first-of-type) {
+  display: none;
+}
+/*inputs*/
+.msform input, .msform textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  font-size: 13px;
+}
+/*buttons*/
+.msform .action-button {
+  width: 50px;
+  height: 120px;
+  background: #88b3da;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+  position: absolute;
+  top: 50%;
+}
+.msform .action-button:hover, .msform .action-button:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+/*progressbar*/
+.progressbar {
+  overflow: hidden;
+  /*CSS counters to number the steps*/
+  counter-reset: step;
+  width: 65%;
+  position: absolute;
+  left: 14%;
+}
+.progressbar li {
+  list-style-type: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 15px;
+  width: 25%;
+  border-radius: 8px;
+  float: left;
+  position: relative;
+}
+.progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 50px;
+  line-height: 35px;
+  display: block;
+  font-size: 25px;
+  color: #333;
+  background: #c9deef;
+  border-radius: 50px;
+  margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+.progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: white;
+  position: absolute;
+  left: -50%;
+  top: 9px;
+  z-index: -1; /*put it behind the numbers*/
+}
+.progressbar li:first-child:after {
+  /*connector not needed before the first step*/
+  content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+.progressbar li.active:before,  .progressbar li.active:after{
+  background: #0e70c5;
+  color: white;
+}
+
+.progressbar h3 {
+  color: aliceblue;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#section_01_vd {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
+}
+ 
+#vd_text {
+  border-radius: 15px 0px 0px 15px;
+  background-color: #0000008f;
+  color: #ccc;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#vd_btn {
+  border-radius: 0px 8px 8px 0px;
+  padding: 25px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.vd_box_show {
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+.vd_box_back {
+  
+}

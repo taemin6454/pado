@@ -158,21 +158,17 @@ function fnMoveNextContent(id, clsNM, num) {
     var cntBool = false;
     $("#" + id + " li").removeClass("active", "");
     $("#" + id + " ." + clsNM).addClass("active");
-    console.log("Click id : " + id);
+    
     cntList.map(function (element) {
         if (element.get(id) != undefined && element.get(id) != null) {
-            console.log("** el_ID: " + id + " num: " + num);
             cntBool = true;
             element.delete(id);
-            element.set(id, num);
-            //console.log("**cntMap::" + cntMap.get(id) + " / " + num);
+            element.set(id, num);            
         }
         return cntBool;
     });
     if (!cntBool) {
         cntMap.set(id, num);
         cntList.push(cntMap);
-        //console.log("*ID: "+ el_ID + " / num: " + num);
-        //console.log("cntMap::" + cntMap.get(el_ID) + " / " + num);
     }
 }

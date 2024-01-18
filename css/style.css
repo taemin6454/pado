@@ -24,8 +24,8 @@ body {
 
 #section_0_1 {
   background-image: url("../img/pado_poster.png");
-  background-size: contain;
-  background-repeat: round;
+  background-size: cover;
+  background-repeat: no-repeat;
   object-fit: contain;
   /*
   background-image: url("../img/pado_poster.png");

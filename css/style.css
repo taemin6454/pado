@@ -423,6 +423,11 @@ body {
   background-repeat: round;
 }
 
+#section_dtl {
+  background-size: cover;
+  background-repeat: round;
+}
+
 #section_final {
   background-image: url("../img/final_85.png");
   background-size: cover;

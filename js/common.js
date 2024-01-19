@@ -21,14 +21,16 @@ $(document).ready(function () {
 
 $(function () {
     var input = document.getElementById("vd_text");
-
+	
+	/*
     input.addEventListener("keyup", function (event) {
         if (event.keyCode === 13) {
             event.preventDefault();
             $("#exampleModal").modal("show");
         }
     });
-
+	*/
+	
     $("#exampleModal").on("shown.bs.modal", function () {
         $("#vd_modal").removeClass("vd_box_show");
         var text = $("#vd_text").val();
@@ -177,4 +179,21 @@ function fnMoveNextContent(id, clsNM, num) {
         cntMap.set(id, num);
         cntList.push(cntMap);
     }
+}
+
+function fn_move_detail(text) {
+	$("#section_final").hide();
+	$("#section_dtl").show();
+	$("#section_dtl").css('background-image', 'none');
+	console.log(text);
+	if(text == 'sub1') {
+		$("#section_dtl").css('background-image', 'url(./img/final_1.png)');
+	} else if(text == 'sub2') {
+		$("#section_dtl").css('background-image', 'url(./img/final_2.png)');
+	} else if(text == 'sub3') {
+		$("#section_dtl").css('background-image', 'url(./img/final_3.png)');
+	} else {
+		$("#section_dtl").hide();
+		$("#section_final").show();
+	}
 }

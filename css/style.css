@@ -1,5 +1,6 @@
 /*custom font*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/earlyaccess/jejugothic.css); /* 제주고딕체 */
 @font-face {
   font-family: 'KBO-Dia-Gothic_bold';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
@@ -28,6 +29,10 @@
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
+}
+
+.jejugothic * { 
+ font-family: 'Jeju Gothic', sans-serif;
 }
 
 body {
@@ -437,6 +442,7 @@ body {
 #step_final_top span {
   font-size: 10em;
   font-family:'MICEGothic Bold','Noto Sans KR', sans-serif;
+  font-weight: bolder;
   color: #fff;
 }
 
@@ -452,20 +458,24 @@ body {
 #step_final_down span {
   font-size: 4em;
   font-family: 'MICEGothic Bold','Noto Sans KR', sans-serif;
+  font-weight: bolder;
   color: #fff;
   
 }
 
 .rslt_cateText {
   font-size: 24px;
-  font-family: 'MICEGothic Bold','Noto Sans KR', sans-serif;
+  font-family:'Jeju Gothic','Noto Sans KR', sans-serif;
+  font-weight: lighter;
   color: #fff;
   text-align: center;
+  
 }
 
 .rslt_padoText{
   font-size: 32px;
-  font-family: 'MICEGothic Bold','Noto Sans KR', sans-serif;
+  font-family: 'Jeju Gothic','Noto Sans KR', sans-serif;
+  font-weight: 200;
   color: #fff;
   text-align: center;
 }
@@ -496,5 +506,5 @@ body {
   font-family: 'SOYOMapleBoldTTF';
   font-size: 24px;
   color:#fff;
-
+  font-weight: 40;
 }

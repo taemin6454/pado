@@ -457,14 +457,14 @@ body {
 }
 
 .rslt_cateText {
-  font-size: 30px;
+  font-size: 24px;
   font-family: 'MICEGothic Bold','Noto Sans KR', sans-serif;
   color: #fff;
   text-align: center;
 }
 
 .rslt_padoText{
-  font-size: 42px;
+  font-size: 32px;
   font-family: 'MICEGothic Bold','Noto Sans KR', sans-serif;
   color: #fff;
   text-align: center;
@@ -494,7 +494,7 @@ body {
   margin: auto;
   text-align: center;
   font-family: 'SOYOMapleBoldTTF';
-  font-size: 30px;
+  font-size: 24px;
   color:#fff;
 
 }
